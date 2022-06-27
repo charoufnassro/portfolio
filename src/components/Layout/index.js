@@ -13,7 +13,7 @@ const Layout = () => {
         <span className="tags bottom-tags">
           &lt;/body&gt;
           <br />
-          <span className="bottom-tag-html">echo "Hi i'm CHAROUF"</span>
+          <span className="bottom-tag-html">echo "Hi i'm CHAROUF Nassereddine"</span>
         </span>
       </div>
     </div>
