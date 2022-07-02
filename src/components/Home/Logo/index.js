@@ -1,5 +1,5 @@
 import { useEffect, useRef } from 'react'
-import LogoS from '../../../assets/images/Logo-t.png'
+import LogoT from '../../../assets/images/Logo-t.png'
 import './index.scss'
 
 const Logo = () => {
@@ -12,7 +12,7 @@ const Logo = () => {
       <img
         className="solid-logo"
         ref={solidLogoRef}
-        src={LogoS}
+        src={LogoT}
         alt="JavaScript,  Developer"
       />
     </div>
