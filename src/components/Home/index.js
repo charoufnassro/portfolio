@@ -3,12 +3,20 @@ import { Link } from 'react-router-dom';
 import LogoTitle from '../../assets/images/Logo-t.png';
 import AnimatedLetters from '../AnimatedLetters';
 import './index.scss';
+import Logo from './Logo';
 
 const Home = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
 
   const nameArray = [' ', 'C', 'H', 'A', 'R', 'O', 'U', 'F','.']
   const jobArray = ['S', 'y', 's', 't', 'e', 'm', ' ', 'A', 'd', 'm', 'n', 'i', 's', 't', 'a', 'i', 'o', 'n', '.']
+
+  useEffect(() => {
+    setTimeout(() => {
+      setLetterClass('text-animate-hover')
+    }, 4000);
+  }, [])
+
 
   return (
 
@@ -36,6 +44,7 @@ const Home = () => {
           <h2>Linux, Proxmox / Vmware / Nginx / Commvault</h2>
           <Link to="/contact" className='flat-button' >CONTACT ME</Link>
       </div>
+      <Logo />
     </div>
 
   );
