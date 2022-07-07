@@ -11,7 +11,7 @@ const Contact = () => {
   const form = useRef()
 
   useEffect(() => {
-    return setTimeout(() => {
+    setTimeout(() => {
       setLetterClass('text-animate-hover')
     }, 3000)
   }, [])
@@ -21,10 +21,10 @@ const Contact = () => {
 
     emailjs
       .sendForm(
-        'gmail',
-        'template_YeJhZkgb',
+        'service_8h3jksm',
+        'template_qon1bho',
         form.current,
-        'your-token'
+        'DXmz8cncXx6-wX9RC'
       )
       .then(
         () => {
@@ -90,25 +90,25 @@ const Contact = () => {
           </div>
         </div>
         <div className="info-map">
-          Slobodan Gajić,
+          CHAROUF Nassereddine,
           <br />
-          Serbia,
+          Algeria,
           <br />
-          Branka RadiČevića 19, 22000 <br />
-          Sremska Mitrovica <br />
+          Rue Yaya Akzol, 16000 <br />
+          Algries <br />
           <br />
-          <span>freelancerslobodan@gmail.com</span>
+          <span>charoufnassro@gmail.com</span>
         </div>
         <div className="map-wrap">
-          <MapContainer center={[44.96366, 19.61045]} zoom={13}>
+          <MapContainer center={[36.75543, 3.05685]} zoom={13}>
             <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
-            <Marker position={[44.96366, 19.61045]}>
-              <Popup>Sloba lives here, come over for a cup of coffee :)</Popup>
+            <Marker position={[36.75543, 3.05685]}>
+              <Popup>CHAROUF lives here, come over for a cup of coffee :)</Popup>
             </Marker>
           </MapContainer>
         </div>
       </div>
-      <Loader type="pacman" />
+      <Loader type="ball-beat" />
     </>
   )
 }

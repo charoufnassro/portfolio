@@ -1,7 +1,10 @@
 $primary-color: #ffc300;
 
 @import 'animate.css';
-@import '~loaders.css/src/animations/pacman.scss';
+@import 'loaders.css/src/animations/ball-scale-multiple.scss';
+@import 'loaders.css/src/animations/ball-zig-zag.scss';
+@import 'loaders.css/src/animations/ball-beat.scss';
+
 
 @font-face {
   font-family: 'Helvetica Neue';

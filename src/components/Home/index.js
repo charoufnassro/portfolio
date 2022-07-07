@@ -4,12 +4,13 @@ import LogoTitle from '../../assets/images/Logo-t.png';
 import AnimatedLetters from '../AnimatedLetters';
 import './index.scss';
 import Logo from './Logo';
+import Loader from 'react-loaders'
 
 const Home = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
 
   const nameArray = [' ', 'C', 'H', 'A', 'R', 'O', 'U', 'F','.']
-  const jobArray = ['S', 'y', 's', 't', 'e', 'm', ' ', 'A', 'd', 'm', 'n', 'i', 's', 't', 'a', 'i', 'o', 'n', '.']
+  const jobArray = ['S', 'y', 's', 't', 'e', 'm', ' ', 'E', 'n', 'g', 'i', 'n', 'e', 'e', 'r', '!', '!', '!', '.']
 
   useEffect(() => {
     setTimeout(() => {
@@ -20,6 +21,7 @@ const Home = () => {
 
   return (
 
+    <>
     <div className='container home-page'>
       <div className='text-zone'>
         <h1>
@@ -46,7 +48,8 @@ const Home = () => {
       </div>
       <Logo />
     </div>
-
+      <Loader type="ball-zig-zag" />
+    </>
   );
 }
 
